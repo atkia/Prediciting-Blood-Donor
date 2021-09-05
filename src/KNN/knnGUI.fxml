@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="KNN.Controller1">
+   <children>
+      <HBox layoutX="-7.0" prefHeight="199.0" prefWidth="483.0">
+         <children>
+            <Region prefHeight="200.0" prefWidth="200.0" />
+            <Label prefHeight="22.0" prefWidth="247.0" text="  Pridicting Blood Donation">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox layoutX="60.0" layoutY="44.0" prefHeight="131.0" prefWidth="449.0">
+         <children>
+            <HBox prefHeight="30.0" prefWidth="446.0">
+               <children>
+                  <Label text="Month since last Donation:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textField1" prefHeight="25.0" prefWidth="111.0" />
+                  <Button fx:id="enter1" mnemonicParsing="false" onMouseClicked="#input1" text="Enter" />
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="446.0">
+               <children>
+                  <Label text="Total number of Donation:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textField2" prefHeight="25.0" prefWidth="111.0" />
+                  <Button fx:id="enter2" mnemonicParsing="false" onMouseClicked="#input2" text="Enter" />
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="446.0">
+               <children>
+                  <Label text="Total blood Donated(in c.c.):">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textField3" prefHeight="25.0" prefWidth="111.0" />
+                  <Button fx:id="enter3" mnemonicParsing="false" onMouseClicked="#input3" text="Enter" />
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="446.0">
+               <children>
+                  <Label text="Month since first Donation:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textField4" prefHeight="25.0" prefWidth="111.0" />
+                  <Button fx:id="enter4" mnemonicParsing="false" onMouseClicked="#input4" text="Enter" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="135.0" layoutY="175.0">
+         <children>
+            <Label text="Result">
+               <graphic>
+                  <TextField fx:id="result" />
+               </graphic>
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="submit" layoutX="60.0" layoutY="211.0" mnemonicParsing="false" onMouseClicked="#show" text="Show Measures" />
+      <Label fx:id="lrecall" layoutX="62.0" layoutY="276.0" text="Recall" visible="false">
+         <graphic>
+            <TextField fx:id="acc1" visible="false" />
+         </graphic>
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lf1" layoutX="62.0" layoutY="305.0" text="F1 Score" visible="false">
+         <graphic>
+            <TextField fx:id="f11" visible="false" />
+         </graphic>
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lPrecision" layoutX="62.0" layoutY="334.0" text="Precision" visible="false">
+         <graphic>
+            <TextField fx:id="precision1" />
+         </graphic>
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lacc" layoutX="60.0" layoutY="247.0" text="Accuracy" visible="false">
+         <graphic>
+            <TextField fx:id="acc" />
+         </graphic>
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
